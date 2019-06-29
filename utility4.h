@@ -1,0 +1,7 @@
+#pragma once
+#include <stdio.h>
+
+void Item2gotoxy(int x, int y)
+{
+	printf("%c[%d;%df", 0x1B, y, x);
+}
